@@ -1,11 +1,27 @@
 .header {
+  padding-top: .4em;
   background-color: gray;
   margin-bottom: 1.45rem;
 }
 
 .nav-content {
   // max-width: 960px;
-  padding-top: 5px;
+  // padding-top: 5px;
   max-height: 4em;
   padding-left: 10px;
+}
+
+.nav-logo {
+  // padding-top: .1em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  border-radius: .2em;
+  transition: all 0.4s ease;
+  &:hover {
+    background-color: rgb(75, 75, 75);
+    border-style: solid;
+    border-width: 1px;
+    border-color : #38b6ff;
+  }
 }
