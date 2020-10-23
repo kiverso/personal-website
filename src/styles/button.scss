@@ -1,12 +1,13 @@
-button {
-  background-color: rgba(rebeccapurple, 0.7);
+.button {
+  background-color: rgba(rgb(109, 109, 109), 0.7);
   color: white;
   cursor: pointer;
-  font-weight: 700;
-  padding: 1rem;
+  border-radius: .4em;
+  font-weight: 600;
+  padding: .35em;
   text-transform: uppercase;
   transition: all 0.4s ease;
   &:hover {
-    background-color: rgba(rebeccapurple, 0.9);
+    background-color: rgba(rgb(75, 75, 75), 0.9);
   }
 }
