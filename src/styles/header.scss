@@ -1,12 +1,14 @@
 .header {
   padding-top: .4em;
-  background-color: gray;
+  background-color:rgb(110, 110, 110);
   margin-bottom: 1.45rem;
 }
 
 .nav-content {
   // max-width: 960px;
   // padding-top: 5px;
+  position: relative;
+  vertical-align: middle;
   max-height: 4em;
   padding-left: 10px;
 }
