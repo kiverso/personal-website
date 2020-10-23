@@ -1,11 +1,23 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
 
 const BlogPage = ({ data }) => {
+  const posts = data.allMarkdownRemark.edges;
   return (
     <Layout>
-      <div classname="all-posts"></div>
+      <div classname="all-posts">
+        { posts.map(post => (
+          <div key={post.node.id} classname="blog-list-item">
+            <h2>{ post.node.frontmatter.title }</h2>
+            <p>{ post.node.frontmatter.date }</p>
+            <div classname="post-excerpt">
+            <p>{post.node.excerpt}</p>
+            </div>
+            <Link to={post.node.fields.slug}>Read Full Post</Link>
+          </div>
+        ))}
+      </div>
     </Layout>
   );
 };
