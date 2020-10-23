@@ -4,18 +4,13 @@ import React from "react"
 import logo from "../images/logo.svg"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: "gray",
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
+  <nav className="header">
+    <div className="nav-content site-content"
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        maxHeight: '2.5em',
-        paddingLeft: 10
+        // margin: `0 auto`,
+        // maxWidth: 960,
+        // maxHeight: '2.5em',
+        // paddingLeft: 10
       }}
     >
       <Link
@@ -24,7 +19,7 @@ const Header = ({ siteTitle }) => (
         <img src = {logo} alt="site logo" width="40" height="40"></img>
       </Link>
     </div>
-  </header>
+  </nav>
 )
 
 Header.propTypes = {
