@@ -1,15 +1,11 @@
 .header {
-  padding-top: .4em;
+  // padding-top: .4em;
   background-color:rgb(110, 110, 110);
-  margin-bottom: 1.45rem;
+  // margin-bottom: 1.45rem;
 }
 
 .nav-content {
-  // max-width: 960px;
-  // padding-top: 5px;
-  position: relative;
-  vertical-align: middle;
-  max-height: 4em;
+  max-height: 3em;
   padding-left: 10px;
 }
 
@@ -25,15 +21,4 @@
     border-style: solid;
     border-color : #38b6ff;
   }
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  max-width: 20%;
-  display: inline;
 }
