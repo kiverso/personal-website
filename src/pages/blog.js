@@ -6,12 +6,12 @@ const BlogPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
   return (
     <Layout>
-      <div classname="all-posts">
+      <div className="all-posts">
         { posts.map(post => (
-          <div key={post.node.id} classname="blog-list-item">
+          <div key={post.node.id} className="blog-list-item">
             <h2>{ post.node.frontmatter.title }</h2>
             <p>{ post.node.frontmatter.date }</p>
-            <div classname="post-excerpt">
+            <div className="post-excerpt">
             <p>{post.node.excerpt}</p>
             </div>
             <Link to={post.node.fields.slug}>Read Full Post</Link>
