@@ -26,3 +26,14 @@
     border-color : #38b6ff;
   }
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  max-width: 20%;
+  display: inline;
+}
