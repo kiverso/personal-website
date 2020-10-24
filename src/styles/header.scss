@@ -4,10 +4,18 @@ header img, header nav {
 }
 
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-image: linear-gradient(45deg, #38b6ff, #ac38ff);
+  background-attachment: fixed;
+  background-size: 100%;
   padding-top: .2em;
   padding-bottom: .2em;
-  background-color: transparent;
   margin-bottom: 1.45rem;
+  // border-bottom-style: solid;
+  // border-bottom-width: 1px;
+  // border-bottom-color: rgb(75, 75, 75);
 }
 
 .nav-content {
