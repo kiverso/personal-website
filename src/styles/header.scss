@@ -1,16 +1,25 @@
+header img, header nav {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .header {
-  // padding-top: .4em;
   background-color:rgb(110, 110, 110);
-  // margin-bottom: 1.45rem;
+  margin-bottom: 1.45rem;
 }
 
 .nav-content {
-  max-height: 3em;
+  // display: flex;
+  max-height: 4em;
   padding-left: 10px;
 }
 
+li {
+  display: inline;
+  margin: 1em;
+}
+
 .nav-logo {
-  // padding-top: .1em;
   border-style: solid;
   border-width: 1px;
   border-color: transparent;
