@@ -4,10 +4,16 @@ header img, header nav {
 }
 
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-image: linear-gradient(whitesmoke 50%, rgba(245,245,245, 0));
   padding-top: .2em;
-  padding-bottom: .2em;
-  background-color: transparent;
+  padding-bottom: 1.8em;
   margin-bottom: 1.45rem;
+  // border-bottom-style: solid;
+  // border-bottom-width: 1px;
+  // border-bottom-color: rgb(75, 75, 75);
 }
 
 .nav-content {
@@ -34,23 +40,23 @@ li {
 }
 
 li a {
-  color: whitesmoke;
+  color: rgb(75, 75, 75);
   text-decoration: none;
   transition: all 0.3s ease;
   &:hover {
-    color: white;
+    color: rgb(65, 65, 65);
   }
 }
 
 .nav-link {
-  border-bottom-style: solid;
+  border-style: solid;
   border-width: 1px;
   border-color: transparent;
-  border-radius: .2em;
+  border-radius: 1.1em;
   transition: all 0.3s ease;
   &:hover {
-    background-color: rgb(75, 75, 75);
-    border-bottom-style: solid;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
     border-color : #38b6ff;
   }
 }
