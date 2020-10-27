@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import logo from "../images/logo.svg"
+import Burger from "./burger"
 
 const Header = ({ siteTitle, menuLinks }) => (
   <header className="header">
@@ -15,11 +16,8 @@ const Header = ({ siteTitle, menuLinks }) => (
         </Link>
       ))}
     </nav>
-    <div className="burger">
-      <div/>
-      <div/>
-      <div/>
-    </div>
+    <Burger>
+    </Burger>
   </header>
 )
 

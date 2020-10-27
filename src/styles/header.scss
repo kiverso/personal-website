@@ -32,7 +32,7 @@
   // padding-top: .5em;
   grid-area: nav;
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(5, auto);
   align-items: center;
   justify-content: center;
 }
@@ -62,10 +62,6 @@
   }
 }
 
-.burger {
-  display: none;
-}
-
 @media (max-width: 700px){
   .header {
     grid-template-areas: "logo burger" "nav nav"
@@ -74,42 +70,23 @@
   .nav {
     position: fixed;
     right: 0px;
-    top: 3em;
-    width: 60vw;
-    height: 60vh;
+    top: 0px;
+    width: 70vw;
+    height: 70vh;
     background-color: rgb(75, 75, 75);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
     grid-template-columns: none ;
-    row-gap: 20px;
+    row-gap: 10px;
   }
 
   
   .nav-link {
-    margin: .2em;
+    margin-top: 1em;
     
     
   }
   .nav a {
     color: whitesmoke;
     margin-left: 0;
-  }
-
-  .burger {
-    position: fixed;
-    top: .5em;
-    right: 1em;
-    display: block;
-    // background-color: rgb(75, 75, 75);
-  }
-  .burger button {
-    outline-style: none;
-  }
-  .burger div {
-    background-color: rgb(75, 75, 75);
-    width: 2em;
-    height: .25em;
-    margin-top: .3em;
-    border-radius: 10px;
-
   }
 }
