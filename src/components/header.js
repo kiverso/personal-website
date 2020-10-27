@@ -4,7 +4,7 @@ import React from "react"
 import logo from "../images/logo.svg"
 
 const Header = ({ siteTitle, menuLinks }) => (
-  <header className="header site-content">
+  <header className="header">
     <Link to="/">
       <img src = {logo} alt="site logo" width="40" height="40" className="nav-link logo"></img>
     </Link>
@@ -15,6 +15,11 @@ const Header = ({ siteTitle, menuLinks }) => (
         </Link>
       ))}
     </nav>
+    <div className="burger">
+      <div/>
+      <div/>
+      <div/>
+    </div>
   </header>
 )
 
