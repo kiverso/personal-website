@@ -1,12 +1,19 @@
 import React from 'react';
+import { bool, func } from 'prop-types';
 
-const Burger = () => {
+const Burger = ({open, setOpen}) => {
   return(
-  <div className="burger">
-    <div className="top-bun"/>
-    <div className="middle-bun"/>
-    <div className="bottom-bun"/>
-</div>
-)}
+    <button className="burger" open={open} onClick={() => setOpen(!open)}>
+      <div className="top-bun"/>
+      <div className="middle-bun"/>
+      <div className="bottom-bun"/>
+  </button>
+  )
+}
+
+Burger.prototypes = {
+  open: bool.isRequired,
+  setOpen: func.isRequired,
+};
 
 export default Burger;
