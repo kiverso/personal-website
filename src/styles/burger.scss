@@ -4,22 +4,26 @@
 
 @media (max-width: 700px){
   .burger {
+    // margin-top: .3em;
     z-index: 100;
     position: fixed;
-    top: .5em;
-    right: 1em;
+    top: 1em;
+    right: 1.5em;
     display: block;
     // background-color: rgb(75, 75, 75);
   }
-  .burger button {
-    outline-style: none;
-  }
+
   .burger div {
     background-color:whitesmoke;
     width: 2em;
     height: .25em;
-    margin-top: .3em;
-    border-radius: 10px;
-
+    // margin-bottom: .2em;
+    border-radius: .15em;
   }
+
+  .middle-bun {
+    margin-top: .25em;
+    margin-bottom: .25em;
+  }
+
 }
