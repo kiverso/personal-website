@@ -22,7 +22,7 @@
   }
 
   .burger div {
-    background-color: rgb(75, 75, 75);
+    // background-color: rgb(75, 75, 75);
     width: 2em;
     height: .25em;
     // margin-bottom: .2em;
@@ -30,8 +30,76 @@
   }
 
   .middle-bun {
+    background-color: rgb(75,75,75);
     margin-top: .25em;
     margin-bottom: .25em;
   }
+  .top-bun {
+    background-color: rgb(75,75,75);
+  }
+  .bottom-bun {
+    background-color: rgb(75,75,75);
+  }
 
+  // .burgerMiddleAnimation-enter {
+  //   background-color: rgb(75,75,75);
+  // }
+
+  .burgerMiddleAnimation-enter-done {
+    background-color: whitesmoke;
+    transform: rotate(45deg);
+  }
+
+  .burgerMiddleAnimation-enter-active {
+    background-color: whitesmoke;
+    transform: rotate(45deg);
+    transition: all 250ms;
+  }
+  .burgerMiddleAnimation-exit {
+    background-color: whitesmoke;
+    transform: rotate(45deg);
+  }
+  .burgerMiddleAnimation-exit-active {
+    background-color: rgb(75,75,75);
+    transform: rotate(0deg);
+    transition: all 250ms;
+  }
+  .burgerTopAnimation-enter-done {
+    background-color: whitesmoke;
+    transform: translate(-0%, 202%) rotate(135deg);
+  }
+
+  .burgerTopAnimation-enter-active {
+    background-color: whitesmoke;
+    transform: translate(-0%, 202%) rotate(135deg);
+    transition: all 250ms;
+  }
+  .burgerTopAnimation-exit {
+    background-color: whitesmoke;
+    transform: translate(-0%, 202%) rotate(135deg);
+  }
+  .burgerTopAnimation-exit-active {
+    background-color: rgb(75,75,75);
+    transform: rotate(0deg);
+    transition: all 250ms;
+  }
+  .burgerBottomAnimation-enter-done {
+    background-color: whitesmoke;
+    transform: translate(-0%, -190%) rotate(135deg);
+  }
+
+  .burgerBottomAnimation-enter-active {
+    background-color: whitesmoke;
+    transform: translate(-0%, -190%) rotate(135deg);
+    transition: all 250ms;
+  }
+  .burgerBottomAnimation-exit {
+    background-color: whitesmoke;
+    transform: translate(-0%, -190%) rotate(135deg);
+  }
+  .burgerBottomAnimation-exit-active {
+    background-color: rgb(75,75,75);
+    transform: rotate(0deg);
+    transition: all 250ms;
+  }
 }
