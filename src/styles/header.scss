@@ -22,6 +22,8 @@
 // }
 
 .logo {
+  // position: fixed;
+  z-index: 100;
   grid-area: logo;
   margin-left: 1em;
   margin-top: 0;
@@ -68,21 +70,37 @@
   }
 
   .nav {
+    z-index: 99;
     position: fixed;
     right: 0px;
     top: 0px;
-    width: 70vw;
-    height: 70vh;
-    background-color: rgb(75, 75, 75);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(65, 65, 65, .96);
     grid-template-rows: repeat(5, auto);
     grid-template-columns: none ;
     row-gap: 10px;
-    transform: translateX(100%)
   }
 
   .nav a {
     color: whitesmoke;
     margin-left: 0;
+    font-size: 1.5em;
     // margin-top: 1em;
+  }
+
+  .navAnimation-enter{
+    transform: translateX(100%);
+  }
+  .navAnimation-enter-active{
+    transform: translateX(0%);
+    transition: all 250ms;
+  }
+  .navAnimation-exit{
+    transform: translateX(0%);
+  }
+  .navAnimation-exit-active{
+    transform: translateX(100%);
+    transition: all 250ms;
   }
 }
