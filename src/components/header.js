@@ -1,23 +1,45 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import logo from "../images/logo.svg"
 import Burger from "./burger"
 
 const Header = ({ siteTitle, menuLinks }) => {
   const [open, setOpen] = useState(false);
+  const [mobile, setMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 700px)");
+    mediaQuery.addListener(handleMediaQueryChange);
+    handleMediaQueryChange(mediaQuery);
+
+    return () => {
+      mediaQuery.removeListener(handleMediaQueryChange);
+    };
+  }, []);
+
+  const handleMediaQueryChange = (mediaQuery) => {
+    if ( mediaQuery.matches ) {
+      setMobile(true);
+    } else {
+      setMobile(false)
+    }
+  }
+
   return(
     <header className="header">
       <Link to="/">
         <img src = {logo} alt="site logo" width="40" height="40" className="nav-link logo"></img>
       </Link>
-      <nav className="nav">
-        {menuLinks.map(link => (
-          <Link to={link.link} key={link.name} className="nav-link">
-            {link.name}
-          </Link>
-        ))}
-      </nav>
+      {(!mobile || open) && (
+        <nav className="nav">
+          {menuLinks.map(link => (
+            <Link to={link.link} key={link.name} className="nav-link">
+              {link.name}
+            </Link>
+          ))}
+        </nav>
+      )}
       <Burger open = {open} setOpen = {setOpen}/>
     </header>
   );
