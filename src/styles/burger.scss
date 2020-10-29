@@ -5,7 +5,6 @@
 
 @media (max-width: 700px){
   .burger {
-    // margin-top: .3em;
     z-index: 100;
     position: fixed;
     top: 1em;
@@ -15,10 +14,16 @@
     background-color: transparent;
     margin: 0;
     padding:0;
-    &:click {
-      border: none ;
-    }
+    // &:click {
+    //   border: none ;
+    // }
     // background-color: rgb(75, 75, 75);
+  }
+
+  button:focus {
+    outline-offset: 4px;
+    outline-style: dotted;
+    outline-color:rgb(170, 170, 170);
   }
 
   .burger div {

@@ -40,27 +40,28 @@
 }
 
 .nav a {
+  scale: 100%;
   padding-left: .5em;
   padding-right: .5em;
   margin-left: 4em;
   color: rgb(75, 75, 75);
   text-decoration: none;
-  transition: all 0.25s ease;
+  transition: all 0.15s ease;
   &:hover {
-    color: rgb(50, 50, 50)
+
+    // font-weight: 450;
   }
 }
 
 .nav-link {
-  border-style: solid;
-  border-width: 1px;
-  border-color: transparent;
-  border-radius: 1.1em;
+  // border-style: solid;
+  // border-width: 1px;
+  // border-color: transparent;
+  // border-radius: 1.1em;
   transition: all 0.3s ease;
   &:hover {
-    background-color: rgb(255, 255, 255);
-    border-style: solid;
-    border-color : #38b6ff;
+    transform: scale(1.15);
+    color: rgb(50, 50, 50);
   }
 }
 
@@ -86,7 +87,9 @@
     color: whitesmoke;
     margin-left: 0;
     font-size: 1.5em;
-    // margin-top: 1em;
+    &:hover {
+      color: white;
+    }
   }
 
   .navAnimation-enter{
