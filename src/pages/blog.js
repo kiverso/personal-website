@@ -1,12 +1,14 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
+import SEO from "../components/seo"
 import '../styles/styles.scss'
 
 const BlogPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
   return (
     <Layout>
+      <SEO title="Blog" />
       <div className="all-posts">
         { posts.map(post => (
           <div key={post.node.id} className="blog-list-item">
