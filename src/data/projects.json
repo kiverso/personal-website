@@ -1,10 +1,10 @@
 [
   {
     "title": "Podsmack",
-    "date": "July 2020",
+    "date": "2020-07",
     "description": "Fullstack Web application for discovering Podcasts created in your city",
     "demo": "https://podsmack.herokuapp.com/",
     "repo": "https://github.com/kiverso/podsmack",
-    "image": "../images/projects/podsmack_screenshot"
+    "image": "../images/projects/podsmack_screenshot.png"
   }
 ]
