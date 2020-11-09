@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Podsmack",
+    "date": "2020-07",
+    "description": "Fullstack Web application for discovering Podcasts created in your city",
+    "demo": "https://podsmack.herokuapp.com/",
+    "repo": "https://github.com/kiverso/podsmack",
+    "image": "../images/projects/podsmack_screenshot.png"
+  },
+  {
+    "title": "To The Moon and Back",
+    "date": "2020-09",
+    "description": "Fullstack Web application for virtually traveling and learning about the solar solar system",
+    "demo": "https://to-the-moon-and-back.netlify.app",
+    "repo": "https://github.com/To-the-Moon-and-Back",
+    "image": "../images/projects/moon_back_screenshot.png"
+  }
+]

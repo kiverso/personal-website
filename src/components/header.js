@@ -2,12 +2,12 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState, useEffect } from "react"
 import { CSSTransition } from "react-transition-group"
-import logo from "../images/logo.svg"
+import logo from "../images/logo_alt.svg"
 import Burger from "./burger"
 
 const Header = ({ siteTitle, menuLinks }) => {
   const [open, setOpen] = useState(false);
-  const [mobile, setMobile] = useState(false);
+  const [mobile, setMobile] = useState(true);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 700px)");
@@ -23,7 +23,7 @@ const Header = ({ siteTitle, menuLinks }) => {
     if ( mediaQuery.matches ) {
       setMobile(true);
     } else {
-      setMobile(false)
+      setMobile(false);
     }
   }
 
@@ -33,7 +33,7 @@ const Header = ({ siteTitle, menuLinks }) => {
         <img src = {logo} alt="site logo" width="40" height="40" className="nav-link logo"></img>
       </Link>
       <CSSTransition
-        in={!mobile || open }
+        in={ open || !mobile }
         timeout={250}
         classNames="navAnimation"
         unmountOnExit>
