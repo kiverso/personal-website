@@ -11,9 +11,7 @@ const portfolioPage = ({data}) => (
       <div className="all-projects">
         { data.allProjectsJson.edges.map(project => (
           <div key={project.node.id} className="project">
-            <div className="project-image">
-              <Img fluid={project.node.image.childImageSharp.fluid} />
-            </div>
+            <Img className="project-image" fluid={project.node.image.childImageSharp.fluid} />
             <div className="project-description">
               <h2>{project.node.title}</h2>
               <p>{project.node.description}</p>
