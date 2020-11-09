@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Img from "gatsby-image"
+import { Link } from "gatsby";
 
 const portfolioPage = ({data}) => (
     <Layout>
@@ -13,7 +14,11 @@ const portfolioPage = ({data}) => (
             <div className="project-image">
               <Img fluid={project.node.image.childImageSharp.fluid} />
             </div>
-
+            <div className="project-description">
+              {project.node.description}
+            </div>
+            <Link to={project.node.demo} className ="project-link" >Application</Link>
+            <Link to={project.node.repo} className ="project-link" >Source Code</Link>
           </div>
         ))}
       </div>
