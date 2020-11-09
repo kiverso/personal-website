@@ -1,0 +1,21 @@
+.project {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-areas: "image text" ;
+  margin: 1em;
+  padding: 1em;
+  border-radius: .6em;
+  background-color: rgb(223, 221, 221);
+}
+
+.project-image {
+  grid-area: image;
+  padding-right: 1em;
+}
+.project-description {
+  grid-area: text;
+}
+
+.project-link {
+  
+}
