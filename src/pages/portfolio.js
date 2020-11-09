@@ -15,6 +15,7 @@ const portfolioPage = ({data}) => (
               <Img fluid={project.node.image.childImageSharp.fluid} />
             </div>
             <div className="project-description">
+              <h2>{project.node.title}</h2>
               <p>{project.node.description}</p>
               <Link to={project.node.demo} className ="project-link" >Application</Link>
               <Link to={project.node.repo} className ="project-link" >Source Code</Link>
